@@ -59,24 +59,31 @@ async def choose_lang(message: types.Message):
     lang_en_button = InlineKeyboardButton(text='🇬🇧 EN', callback_data='changelang_en')
     changelang_kb = InlineKeyboardMarkup()
     changelang_kb.add(lang_ru_button, lang_en_button)
-    await message.reply(_('Выберите язык:'), reply_markup=changelang_kb)
+    await message.reply(_('Выберите язык:'), reply_markup=changelang_kb) # Отвечаем на сообщение и добавляем inline клавиатуру, созданную выше
 
 
 @dp.message_handler(Text(startswith='📐'))
 async def choose_units(message: types.Message):
+    """
+    Функция для изменения единиц измерения
+    """
     units_std_button = InlineKeyboardButton(text=_('K, м/с, гПа'), callback_data='changeunits_standart')
     units_metric_button = InlineKeyboardButton(text=_('°C, м/с, мм рт ст'), callback_data='changeunits_metric')
     units_imper_button = InlineKeyboardButton(text=_('°F, миль/ч, гПа'), callback_data='changeunits_imperial')
     changeunits_kb = InlineKeyboardMarkup(row_width=1)
     changeunits_kb.add(units_std_button, units_metric_button, units_imper_button)
-    await message.reply(_('Выберите единицы измерения:'), reply_markup=changeunits_kb)
+    await message.reply(_('Выберите единицы измерения:'), reply_markup=changeunits_kb) # Отвечаем на сообщение и добавляем inline клавиатуру, созданную выше
 
 
 @dp.message_handler()
 async def get_weather(message: types.Message):
+    """
+    Когда боту приходит любое сообщение, содержащее текст, вызывается эта функция
+    Бот делает запрос с использованием текста сообщения в качестве города
+    """
     user_data = await db.get_user_data(message.from_user.id)
     user_lang = user_data[1]
-    user_units = user_data[2]
+    user_units = user_data[2] # Достаем язык и единицы измерения пользователя
     text_for_message = make_weather_request(
         url=f'https://api.openweathermap.org/data/2.5/weather' \
             f'?q={message.text}' \
@@ -85,45 +92,54 @@ async def get_weather(message: types.Message):
             f'&lang={user_lang}',
         units=user_units)
     if text_for_message == 'Проверьте название города!':
-        await message.reply(text_for_message)
+        await message.reply(text_for_message) # Если запрос не увенчался успехом, просим проверить название города
     else:
         weather_24h_button = InlineKeyboardButton(text=_('📆 Прогноз на 24 ч'), callback_data='forecast_24h')
         weather_5d_button = InlineKeyboardButton(text=_('🗓 Прогноз на 5 дней'), callback_data='forecast_5d')
         weather_current_kb = InlineKeyboardMarkup(row_width=1).add(weather_24h_button, weather_5d_button)
 
-        await message.reply(text_for_message, reply_markup=weather_current_kb)
+        await message.reply(text_for_message, reply_markup=weather_current_kb) # Если запрос прошел, выдаем сводку погоды и добавляем клавиатуру для прогнозов
 
 
 @dp.callback_query_handler(Text(startswith='changeunits_'))
 async def changeunits(callback: types.CallbackQuery):
+    """
+    Изменяем единицы измерения пользователя
+    """
     new_units = callback.data.split('_')[1]
-    await db.edit_units(user_id=callback.from_user.id, user_units=new_units)
+    await db.edit_units(user_id=callback.from_user.id, user_units=new_units) # Вносим изменения в базу данных
     await callback.message.reply_to_message.reply(_('Вы изменили единицы измерения!'))
     await callback.answer()
 
 
 @dp.callback_query_handler(Text(startswith='changelang_'))
 async def changelang(callback: types.CallbackQuery):
+    """
+    Изменяем язык пользователя
+    """
     new_lang = callback.data.split('_')[1]
-    await db.edit_language(user_id=callback.from_user.id, user_lang=new_lang)
+    await db.edit_language(user_id=callback.from_user.id, user_lang=new_lang) # Вносим изменения в базу данных
     location_button = KeyboardButton(_('🏠 Погода в моем регионе', locale=new_lang), request_location=True)
     languages_button = KeyboardButton(_('🌐 Выбор языка', locale=new_lang))
     units_button = KeyboardButton(_('📐 Единицы', locale=new_lang))
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2).row(location_button).add(languages_button,
-                                                                                               units_button)
+                                                                                               units_button) # Обновляем кнопки
     await callback.message.reply_to_message.reply(_('Вы изменили язык на {0}!', locale=new_lang).format(langs_dict[new_lang]),
-                                                  reply_markup=keyboard)
+                                                  reply_markup=keyboard) # Отвечаем на сообщение и подключаем новые кнопки
     await callback.answer()
 
 
 @dp.callback_query_handler(Text(startswith='forecast_'))
 async def forecast(callback: types.CallbackQuery):
+    """
+    Функция для запроса прогноза погоды
+    """
     forecast_str = callback.data.split('_')[1]
 
-    if forecast_str == 'current':
+    if forecast_str == 'current': # Если пользователь запросил текущую погоду
         weather_24h_button = InlineKeyboardButton(text=_('📆 Прогноз на 24 ч'), callback_data='forecast_24h')
         weather_5d_button = InlineKeyboardButton(text=_('🗓 Прогноз на 5 дней'), callback_data='forecast_5d')
-        weather_current_kb = InlineKeyboardMarkup(row_width=1).add(weather_24h_button, weather_5d_button)
+        weather_current_kb = InlineKeyboardMarkup(row_width=1).add(weather_24h_button, weather_5d_button) # Создаем клавиатуру
 
         user_data = await db.get_user_data(callback.from_user.id)
         user_lang = user_data[1]
@@ -134,11 +150,11 @@ async def forecast(callback: types.CallbackQuery):
                 f'&appid={open_weather_token}' \
                 f'&units={user_units}' \
                 f'&lang={user_lang}',
-            units=user_units))
-        await callback.message.edit_reply_markup(reply_markup=weather_current_kb)
+            units=user_units)) # Делаем запрос
+        await callback.message.edit_reply_markup(reply_markup=weather_current_kb) # Отвечаем пользователю. По сути, почти все то же самое, что и в функции get_weather()
         await callback.answer()
 
-    elif forecast_str == '24h':
+    elif forecast_str == '24h':# Если пользователь запросил прогноз на сутки
         weather_current_button = InlineKeyboardButton(text=_('⏳ Погода сейчас'), callback_data='forecast_current')
         weather_5d_button = InlineKeyboardButton(text=_('🗓 Прогноз на 5 дней'), callback_data='forecast_5d')
         weather_24h_kb = InlineKeyboardMarkup(row_width=1).add(weather_current_button, weather_5d_button)
@@ -146,7 +162,7 @@ async def forecast(callback: types.CallbackQuery):
         user_data = await db.get_user_data(callback.from_user.id)
         user_lang = user_data[1]
         user_units = user_data[2]
-        await callback.message.edit_text(make_forecast_request(
+        await callback.message.edit_text(make_forecast_request( # См. подробнее в модуле weather_requests.py
             url=f'https://api.openweathermap.org/data/2.5/forecast' \
                 f'?q={callback.message.text.split(" ")[3].replace(",", "")}' \
                 f'&appid={open_weather_token}' \
@@ -157,10 +173,10 @@ async def forecast(callback: types.CallbackQuery):
             end=9,
             units=user_units
         ))
-        await callback.message.edit_reply_markup(reply_markup=weather_24h_kb)
+        await callback.message.edit_reply_markup(reply_markup=weather_24h_kb) # По аналогии делаем запрос, но уже прогноза, и создаем новую клавиатуру
         await callback.answer()
 
-    elif forecast_str == '5d':
+    elif forecast_str == '5d': # Запрос прогноза на 5 дней. Все аналогично запросу на сутки
         weather_current_button = InlineKeyboardButton(text=_('⏳ Погода сейчас'), callback_data='forecast_current')
         weather_24h_button = InlineKeyboardButton(text=_('📆 Прогноз на 24 ч'), callback_data='forecast_24h')
         weather_5d_kb = InlineKeyboardMarkup(row_width=1).add(weather_current_button, weather_24h_button)
@@ -185,5 +201,5 @@ async def forecast(callback: types.CallbackQuery):
 
 
 if __name__ == '__main__':
-    db.sql_start()
-    executor.start_polling(dp, skip_updates=True)
+    db.sql_start() # Подключаем БД
+    executor.start_polling(dp, skip_updates=True) # Запускаем бота
