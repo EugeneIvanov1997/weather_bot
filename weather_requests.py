@@ -60,7 +60,7 @@ def get_weather_data(weather_json: dict, units: str = 'metric'):
     if wd in code_to_smile:
         result['description'] = code_to_smile[wd]
     else:
-        result['description'] = _('🌫 Плохая видимость 🌫')
+        result['description'] = _('🌫 Мгла 🌫')
 
     result['feels_like'] = weather_json['main']['feels_like']
     result['humidity'] = weather_json['main']['humidity']
@@ -88,7 +88,7 @@ def make_weather_request(url, units: str = 'metric'):
         else:
             country_name = country_code
 
-        coordinates = f"{data['coord']['lat']} {data['coord']['lon']}"
+        coordinates = f"{float(data['coord']['lat']):.4f} {float(data['coord']['lon']):.4f}"
 
         time_shift = data['timezone']
         local_time = datetime.fromtimestamp(int(datetime.timestamp(datetime.utcnow())) + time_shift)
@@ -119,7 +119,7 @@ def make_weather_request(url, units: str = 'metric'):
             time_to_sunset = sunset_time - local_time
             sunset_formated = sunset_formated + _('\n       (через ') + str(time_to_sunset) + ')'
 
-        result = _('<b>🗺 Погода в ') + city + ', ' + _(country_name) + '\xa0' + country_emoji + '</b>\n' \
+        result = _('<b>🗺 Погода в ') + city + ', ' + _(country_name) + '\xa0' + country_emoji + ':</b>\n' \
                                                        '\n' + \
                  _('🕰 Местное время: ') + local_time.strftime("%d.%m.%Y, %H:%M") + '\n' + \
                  _('🎯 Координаты: <code>') + coordinates + '</code>\n' + \
@@ -135,7 +135,7 @@ def make_weather_request(url, units: str = 'metric'):
                  _('        🧚‍♀️     Хорошего дня!     🧚‍♂️')
     except Exception as ex:
         print(ex)
-        result = _('Проверьте название города!')
+        result = _('⚠️ Проверьте название города!')
     finally:
         return result
 
@@ -197,6 +197,6 @@ def make_forecast_request(url, forecast_annotation: str, step=1, end=40, day_nig
 
     except Exception as ex:
         print(ex)
-        result = _('Проверьте название города!')
+        result = _('⚠️ Проверьте название города!')
     finally:
         return result

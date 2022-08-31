@@ -8,7 +8,6 @@ from weather_requests import make_weather_request, make_forecast_request
 import database_sql as db
 
 
-
 langs_dict = {'ru': 'русский', 'en': 'English'} # Этот словарь нужен для вывода сообщения о смене языка
 
 
@@ -96,7 +95,7 @@ async def get_weather(message: types.Message):
             f'&units={user_units}' \
             f'&lang={user_lang}',
         units=user_units)
-    if text_for_message == 'Проверьте название города!':
+    if text_for_message[0] == '⚠':
         await message.reply(text_for_message) # Если запрос не увенчался успехом, просим проверить название города
     else:
         weather_24h_button = InlineKeyboardButton(text=_('📆 Прогноз на 24 ч'), callback_data='forecast_24h')
@@ -154,7 +153,7 @@ async def forecast(callback: types.CallbackQuery):
         user_units = user_data[2]
         await callback.message.edit_text(make_weather_request(
             url=f'https://api.openweathermap.org/data/2.5/weather' \
-                f'?q={callback.message.text.split(" ")[3].replace(",", "")}' \
+                f'?q={" ".join((callback.message.text.split(" ")[3:])).split(",")[0]}' \
                 f'&appid={open_weather_token}' \
                 f'&units={user_units}' \
                 f'&lang={user_lang}',
@@ -170,9 +169,10 @@ async def forecast(callback: types.CallbackQuery):
         user_data = await db.get_user_data(callback.from_user.id)
         user_lang = user_data[1]
         user_units = user_data[2]
+        print(" ".join((callback.message.text.split(" ")[3:])).split(",")[0])
         await callback.message.edit_text(make_forecast_request( # См. подробнее в модуле weather_requests.py
             url=f'https://api.openweathermap.org/data/2.5/forecast' \
-                f'?q={callback.message.text.split(" ")[3].replace(",", "")}' \
+                f'?q={" ".join((callback.message.text.split(" ")[3:])).split(",")[0]}' \
                 f'&appid={open_weather_token}' \
                 f'&units={user_units}' \
                 f'&lang={user_lang}',
@@ -194,7 +194,7 @@ async def forecast(callback: types.CallbackQuery):
         user_units = user_data[2]
         await callback.message.edit_text(make_forecast_request(
             url=f'https://api.openweathermap.org/data/2.5/forecast' \
-                f'?q={callback.message.text.split(" ")[3].replace(",", "")}' \
+                f'?q={" ".join((callback.message.text.split(" ")[3:])).split(",")[0]}' \
                 f'&appid={open_weather_token}' \
                 f'&units={user_units}' \
                 f'&lang={user_lang}',
