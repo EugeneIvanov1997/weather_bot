@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-08-31 14:04+0700\n"
+"POT-Creation-Date: 2022-09-01 00:03+0700\n"
 "PO-Revision-Date: 2022-08-29 22:41+0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -19,1063 +19,1063 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: countries.py:6
+#: countries.py:7
 msgid "Andorra"
 msgstr "Андорра"
 
-#: countries.py:10
+#: countries.py:11
 msgid "United Arab Emirates"
 msgstr "Объединенные Арабские Эмираты"
 
-#: countries.py:14
+#: countries.py:15
 msgid "Afghanistan"
 msgstr "Афганистан"
 
-#: countries.py:18
+#: countries.py:19
 msgid "Antigua and Barbuda"
 msgstr "Антигуа и Барбуда"
 
-#: countries.py:22
+#: countries.py:23
 msgid "Anguilla"
 msgstr "Ангилья"
 
-#: countries.py:26
+#: countries.py:27
 msgid "Albania"
 msgstr "Албания"
 
-#: countries.py:30
+#: countries.py:31
 msgid "Armenia"
 msgstr "Армения"
 
-#: countries.py:34
+#: countries.py:35
 msgid "Angola"
 msgstr "Ангола"
 
-#: countries.py:38
+#: countries.py:39
 msgid "Antarctica"
 msgstr "Антарктида"
 
-#: countries.py:42
+#: countries.py:43
 msgid "Argentina"
 msgstr "Аргентина"
 
-#: countries.py:46
+#: countries.py:47
 msgid "American Samoa"
 msgstr "американское Самоа"
 
-#: countries.py:50
+#: countries.py:51
 msgid "Austria"
 msgstr "Австрия"
 
-#: countries.py:54
+#: countries.py:55
 msgid "Australia"
 msgstr "Австралия"
 
-#: countries.py:58
+#: countries.py:59
 msgid "Aruba"
 msgstr "Аруба"
 
-#: countries.py:62
+#: countries.py:63
 msgid "Åland Islands"
 msgstr "Аландские острова"
 
-#: countries.py:66
+#: countries.py:67
 msgid "Azerbaijan"
 msgstr "Азербайджан"
 
-#: countries.py:70
+#: countries.py:71
 msgid "Bosnia and Herzegovina"
 msgstr "Босния и Герцеговина"
 
-#: countries.py:74
+#: countries.py:75
 msgid "Barbados"
 msgstr "Барбадос"
 
-#: countries.py:78
+#: countries.py:79
 msgid "Bangladesh"
 msgstr "Бангладеш"
 
-#: countries.py:82
+#: countries.py:83
 msgid "Belgium"
 msgstr "Бельгия"
 
-#: countries.py:86
+#: countries.py:87
 msgid "Burkina Faso"
 msgstr "Буркина-Фасо"
 
-#: countries.py:90
+#: countries.py:91
 msgid "Bulgaria"
 msgstr "Болгария"
 
-#: countries.py:94
+#: countries.py:95
 msgid "Bahrain"
 msgstr "Бахрейн"
 
-#: countries.py:98
+#: countries.py:99
 msgid "Burundi"
 msgstr "Бурунди"
 
-#: countries.py:102
+#: countries.py:103
 msgid "Benin"
 msgstr "Бенин"
 
-#: countries.py:106
+#: countries.py:107
 msgid "Saint Barthélemy"
 msgstr "Сен-Бартельми"
 
-#: countries.py:110
+#: countries.py:111
 msgid "Bermuda"
 msgstr "Бермуды"
 
-#: countries.py:114
+#: countries.py:115
 msgid "Brunei Darussalam"
 msgstr "Бруней-Даруссалам"
 
-#: countries.py:118
+#: countries.py:119
 msgid "Bolivia"
 msgstr "Боливия"
 
-#: countries.py:122
+#: countries.py:123
 msgid "Bonaire, Sint Eustatius and Saba"
 msgstr "Бонайре, Синт-Эстатиус и Саба"
 
-#: countries.py:126
+#: countries.py:127
 msgid "Brazil"
 msgstr "Бразилия"
 
-#: countries.py:130
+#: countries.py:131
 msgid "Bahamas"
 msgstr "Багамы"
 
-#: countries.py:134
+#: countries.py:135
 msgid "Bhutan"
 msgstr "Бутан"
 
-#: countries.py:138
+#: countries.py:139
 msgid "Bouvet Island"
 msgstr "Остров Буве"
 
-#: countries.py:142
+#: countries.py:143
 msgid "Botswana"
 msgstr "Ботсвана"
 
-#: countries.py:146
+#: countries.py:147
 msgid "Belarus"
 msgstr "Беларусь"
 
-#: countries.py:150
+#: countries.py:151
 msgid "Belize"
 msgstr "Белиз"
 
-#: countries.py:154
+#: countries.py:155
 msgid "Canada"
 msgstr "Канада"
 
-#: countries.py:158
+#: countries.py:159
 msgid "Cocos (Keeling) Islands"
 msgstr "Кокосовые (Килинг) острова"
 
-#: countries.py:162 countries.py:170
+#: countries.py:163 countries.py:171
 msgid "Congo"
 msgstr "Конго"
 
-#: countries.py:166
+#: countries.py:167
 msgid "Central African Republic"
 msgstr "Центрально-Африканская Республика"
 
-#: countries.py:174
+#: countries.py:175
 msgid "Switzerland"
 msgstr "Швейцария"
 
-#: countries.py:178
+#: countries.py:179
 msgid "Côte D'Ivoire"
 msgstr "Кот-д'Ивуар"
 
-#: countries.py:182
+#: countries.py:183
 msgid "Cook Islands"
 msgstr "Острова Кука"
 
-#: countries.py:186
+#: countries.py:187
 msgid "Chile"
 msgstr "Чили"
 
-#: countries.py:190
+#: countries.py:191
 msgid "Cameroon"
 msgstr "Камерун"
 
-#: countries.py:194
+#: countries.py:195
 msgid "China"
 msgstr "Китай"
 
-#: countries.py:198
+#: countries.py:199
 msgid "Colombia"
 msgstr "Колумбия"
 
-#: countries.py:202
+#: countries.py:203
 msgid "Costa Rica"
 msgstr "Коста-Рика"
 
-#: countries.py:206
+#: countries.py:207
 msgid "Cuba"
 msgstr "Куба"
 
-#: countries.py:210
+#: countries.py:211
 msgid "Cape Verde"
 msgstr "Кабо-Верде"
 
-#: countries.py:214
+#: countries.py:215
 msgid "Curaçao"
 msgstr "Кюрасао"
 
-#: countries.py:218
+#: countries.py:219
 msgid "Christmas Island"
 msgstr "Остров Рождества"
 
-#: countries.py:222
+#: countries.py:223
 msgid "Cyprus"
 msgstr "Кипр"
 
-#: countries.py:226
+#: countries.py:227
 msgid "Czech Republic"
 msgstr "Чешская Республика"
 
-#: countries.py:230
+#: countries.py:231
 msgid "Germany"
 msgstr "Германия"
 
-#: countries.py:234
+#: countries.py:235
 msgid "Djibouti"
 msgstr "Джибути"
 
-#: countries.py:238
+#: countries.py:239
 msgid "Denmark"
 msgstr "Дания"
 
-#: countries.py:242
+#: countries.py:243
 msgid "Dominica"
 msgstr "Доминика"
 
-#: countries.py:246
+#: countries.py:247
 msgid "Dominican Republic"
 msgstr "Доминиканская Респблика"
 
-#: countries.py:250
+#: countries.py:251
 msgid "Algeria"
 msgstr "Алжир"
 
-#: countries.py:254
+#: countries.py:255
 msgid "Ecuador"
 msgstr "Эквадор"
 
-#: countries.py:258
+#: countries.py:259
 msgid "Estonia"
 msgstr "Эстония"
 
-#: countries.py:262
+#: countries.py:263
 msgid "Egypt"
 msgstr "Египет"
 
-#: countries.py:266
+#: countries.py:267
 msgid "Western Sahara"
 msgstr "Западная Сахара"
 
-#: countries.py:270
+#: countries.py:271
 msgid "Eritrea"
 msgstr "Эритрея"
 
-#: countries.py:274
+#: countries.py:275
 msgid "Spain"
 msgstr "Испания"
 
-#: countries.py:278
+#: countries.py:279
 msgid "Ethiopia"
 msgstr "Эфиопия"
 
-#: countries.py:282
+#: countries.py:283
 msgid "Finland"
 msgstr "Финляндия"
 
-#: countries.py:286
+#: countries.py:287
 msgid "Fiji"
 msgstr "Фиджи"
 
-#: countries.py:290
+#: countries.py:291
 msgid "Falkland Islands (Malvinas)"
 msgstr "Фолклендские (Мальвинские) острова"
 
-#: countries.py:294
+#: countries.py:295
 msgid "Micronesia"
 msgstr "Микронезия"
 
-#: countries.py:298
+#: countries.py:299
 msgid "Faroe Islands"
 msgstr "Фарерские острова"
 
-#: countries.py:302
+#: countries.py:303
 msgid "France"
 msgstr "Франция"
 
-#: countries.py:306
+#: countries.py:307
 msgid "Gabon"
 msgstr "Габон"
 
-#: countries.py:310
+#: countries.py:311
 msgid "United Kingdom"
 msgstr "Соединенное Королевство"
 
-#: countries.py:314
+#: countries.py:315
 msgid "Grenada"
 msgstr "Гренада"
 
-#: countries.py:318
+#: countries.py:319
 msgid "Georgia"
 msgstr "Грузия"
 
-#: countries.py:322
+#: countries.py:323
 msgid "French Guiana"
 msgstr "Французская Гвиана"
 
-#: countries.py:326
+#: countries.py:327
 msgid "Guernsey"
 msgstr "Гернси"
 
-#: countries.py:330
+#: countries.py:331
 msgid "Ghana"
 msgstr "Гана"
 
-#: countries.py:334
+#: countries.py:335
 msgid "Gibraltar"
 msgstr "Гибралтар"
 
-#: countries.py:338
+#: countries.py:339
 msgid "Greenland"
 msgstr "Гренландия"
 
-#: countries.py:342
+#: countries.py:343
 msgid "Gambia"
 msgstr "Гамбия"
 
-#: countries.py:346
+#: countries.py:347
 msgid "Guinea"
 msgstr "Гвинея"
 
-#: countries.py:350
+#: countries.py:351
 msgid "Guadeloupe"
 msgstr "Гваделупа"
 
-#: countries.py:354
+#: countries.py:355
 msgid "Equatorial Guinea"
 msgstr "Экваториальная Гвинея"
 
-#: countries.py:358
+#: countries.py:359
 msgid "Greece"
 msgstr "Греция"
 
-#: countries.py:362
+#: countries.py:363
 msgid "South Georgia"
 msgstr "Южная Георгия"
 
-#: countries.py:366
+#: countries.py:367
 msgid "Guatemala"
 msgstr "Гватемала"
 
-#: countries.py:370
+#: countries.py:371
 msgid "Guam"
 msgstr "Гуам"
 
-#: countries.py:374
+#: countries.py:375
 msgid "Guinea-Bissau"
 msgstr "Гвинея-Бисау"
 
-#: countries.py:378
+#: countries.py:379
 msgid "Guyana"
 msgstr "Гайана"
 
-#: countries.py:382
+#: countries.py:383
 msgid "Hong Kong"
 msgstr "Гонконг"
 
-#: countries.py:386
+#: countries.py:387
 msgid "Heard Island and Mcdonald Islands"
 msgstr "Остров Херд и острова Макдональдс"
 
-#: countries.py:390
+#: countries.py:391
 msgid "Honduras"
 msgstr "Гондурас"
 
-#: countries.py:394
+#: countries.py:395
 msgid "Croatia"
 msgstr "Хорватия"
 
-#: countries.py:398
+#: countries.py:399
 msgid "Haiti"
 msgstr "Гаити"
 
-#: countries.py:402
+#: countries.py:403
 msgid "Hungary"
 msgstr "Венгрия"
 
-#: countries.py:406
+#: countries.py:407
 msgid "Indonesia"
 msgstr "Индонезия"
 
-#: countries.py:410
+#: countries.py:411
 msgid "Ireland"
 msgstr "Ирландия"
 
-#: countries.py:414
+#: countries.py:415
 msgid "Israel"
 msgstr "Израиль"
 
-#: countries.py:418
+#: countries.py:419
 msgid "Isle of Man"
 msgstr "Остров Мэн"
 
-#: countries.py:422
+#: countries.py:423
 msgid "India"
 msgstr "Индия"
 
-#: countries.py:426
+#: countries.py:427
 msgid "British Indian Ocean Territory"
 msgstr "Британская территория Индийского океана"
 
-#: countries.py:430
+#: countries.py:431
 msgid "Iraq"
 msgstr "Ирак"
 
-#: countries.py:434
+#: countries.py:435
 msgid "Iran"
 msgstr "Иран"
 
-#: countries.py:438
+#: countries.py:439
 msgid "Iceland"
 msgstr "Исландия"
 
-#: countries.py:442
+#: countries.py:443
 msgid "Italy"
 msgstr "Италия"
 
-#: countries.py:446
+#: countries.py:447
 msgid "Jersey"
 msgstr "Джерси"
 
-#: countries.py:450
+#: countries.py:451
 msgid "Jamaica"
 msgstr "Ямайка"
 
-#: countries.py:454
+#: countries.py:455
 msgid "Jordan"
 msgstr "Иордания"
 
-#: countries.py:458
+#: countries.py:459
 msgid "Japan"
 msgstr "Япония"
 
-#: countries.py:462
+#: countries.py:463
 msgid "Kenya"
 msgstr "Кения"
 
-#: countries.py:466
+#: countries.py:467
 msgid "Kyrgyzstan"
 msgstr "Кыргызстан"
 
-#: countries.py:470
+#: countries.py:471
 msgid "Cambodia"
 msgstr "Камбоджа"
 
-#: countries.py:474
+#: countries.py:475
 msgid "Kiribati"
 msgstr "Кирибати"
 
-#: countries.py:478
+#: countries.py:479
 msgid "Comoros"
 msgstr "Коморы"
 
-#: countries.py:482
+#: countries.py:483
 msgid "Saint Kitts and Nevis"
 msgstr "Сент-Китс и Невис"
 
-#: countries.py:486
+#: countries.py:487
 msgid "North Korea"
 msgstr "Северная Корея"
 
-#: countries.py:490
+#: countries.py:491
 msgid "South Korea"
 msgstr "Южная Корея"
 
-#: countries.py:494
+#: countries.py:495
 msgid "Kuwait"
 msgstr "Кувейт"
 
-#: countries.py:498
+#: countries.py:499
 msgid "Cayman Islands"
 msgstr "Каймановы острова"
 
-#: countries.py:502
+#: countries.py:503
 msgid "Kazakhstan"
 msgstr "Казахстан"
 
-#: countries.py:506
+#: countries.py:507
 msgid "Lao People's Democratic Republic"
 msgstr "Лаосская Народно-Демократическая Республика"
 
-#: countries.py:510
+#: countries.py:511
 msgid "Lebanon"
 msgstr "Ливан"
 
-#: countries.py:514
+#: countries.py:515
 msgid "Saint Lucia"
 msgstr "Сент-Люсия"
 
-#: countries.py:518
+#: countries.py:519
 msgid "Liechtenstein"
 msgstr "Лихтенштейн"
 
-#: countries.py:522
+#: countries.py:523
 msgid "Sri Lanka"
 msgstr "Шри-Ланка"
 
-#: countries.py:526
+#: countries.py:527
 msgid "Liberia"
 msgstr "Либерия"
 
-#: countries.py:530
+#: countries.py:531
 msgid "Lesotho"
 msgstr "Лесото"
 
-#: countries.py:534
+#: countries.py:535
 msgid "Lithuania"
 msgstr "Литва"
 
-#: countries.py:538
+#: countries.py:539
 msgid "Luxembourg"
 msgstr "Люксембург"
 
-#: countries.py:542
+#: countries.py:543
 msgid "Latvia"
 msgstr "Латвия"
 
-#: countries.py:546
+#: countries.py:547
 msgid "Libya"
 msgstr "Ливия"
 
-#: countries.py:550
+#: countries.py:551
 msgid "Morocco"
 msgstr "Марокко"
 
-#: countries.py:554
+#: countries.py:555
 msgid "Monaco"
 msgstr "Монако"
 
-#: countries.py:558
+#: countries.py:559
 msgid "Moldova"
 msgstr "Молдавия"
 
-#: countries.py:562
+#: countries.py:563
 msgid "Montenegro"
 msgstr "Черногория"
 
-#: countries.py:566
+#: countries.py:567
 msgid "Saint Martin (French Part)"
 msgstr "Сен-Мартен (французская часть)"
 
-#: countries.py:570
+#: countries.py:571
 msgid "Madagascar"
 msgstr "Мадагаскар"
 
-#: countries.py:574
+#: countries.py:575
 msgid "Marshall Islands"
 msgstr "Маршалловы острова"
 
-#: countries.py:578
+#: countries.py:579
 msgid "Macedonia"
 msgstr "Македония"
 
-#: countries.py:582
+#: countries.py:583
 msgid "Mali"
 msgstr "Они имели"
 
-#: countries.py:586
+#: countries.py:587
 msgid "Myanmar"
 msgstr "Мьянма"
 
-#: countries.py:590
+#: countries.py:591
 msgid "Mongolia"
 msgstr "Монголия"
 
-#: countries.py:594
+#: countries.py:595
 msgid "Macao"
 msgstr "Макао"
 
-#: countries.py:598
+#: countries.py:599
 msgid "Northern Mariana Islands"
 msgstr "Северные Марианские острова"
 
-#: countries.py:602
+#: countries.py:603
 msgid "Martinique"
 msgstr "Мартиника"
 
-#: countries.py:606
+#: countries.py:607
 msgid "Mauritania"
 msgstr "Мавритания"
 
-#: countries.py:610
+#: countries.py:611
 msgid "Montserrat"
 msgstr "Монтсеррат"
 
-#: countries.py:614
+#: countries.py:615
 msgid "Malta"
 msgstr "Мальта"
 
-#: countries.py:618
+#: countries.py:619
 msgid "Mauritius"
 msgstr "Маврикий"
 
-#: countries.py:622
+#: countries.py:623
 msgid "Maldives"
 msgstr "Мальдивы"
 
-#: countries.py:626
+#: countries.py:627
 msgid "Malawi"
 msgstr "Малави"
 
-#: countries.py:630
+#: countries.py:631
 msgid "Mexico"
 msgstr "Мексика"
 
-#: countries.py:634
+#: countries.py:635
 msgid "Malaysia"
 msgstr "Малайзия"
 
-#: countries.py:638
+#: countries.py:639
 msgid "Mozambique"
 msgstr "Мозамбик"
 
-#: countries.py:642
+#: countries.py:643
 msgid "Namibia"
 msgstr "Намибия"
 
-#: countries.py:646
+#: countries.py:647
 msgid "New Caledonia"
 msgstr "Новая Каледония"
 
-#: countries.py:650
+#: countries.py:651
 msgid "Niger"
 msgstr "Нигер"
 
-#: countries.py:654
+#: countries.py:655
 msgid "Norfolk Island"
 msgstr "Остров Норфолк"
 
-#: countries.py:658
+#: countries.py:659
 msgid "Nigeria"
 msgstr "Нигерия"
 
-#: countries.py:662
+#: countries.py:663
 msgid "Nicaragua"
 msgstr "Никарагуа"
 
-#: countries.py:666
+#: countries.py:667
 msgid "Netherlands"
 msgstr "Нидерланды"
 
-#: countries.py:670
+#: countries.py:671
 msgid "Norway"
 msgstr "Норвегия"
 
-#: countries.py:674
+#: countries.py:675
 msgid "Nepal"
 msgstr "Непал"
 
-#: countries.py:678
+#: countries.py:679
 msgid "Nauru"
 msgstr "Науру"
 
-#: countries.py:682
+#: countries.py:683
 msgid "Niue"
 msgstr "Ниуэ"
 
-#: countries.py:686
+#: countries.py:687
 msgid "New Zealand"
 msgstr "Новая Зеландия"
 
-#: countries.py:690
+#: countries.py:691
 msgid "Oman"
 msgstr "Мой собственный"
 
-#: countries.py:694
+#: countries.py:695
 msgid "Panama"
 msgstr "Панама"
 
-#: countries.py:698
+#: countries.py:699
 msgid "Peru"
 msgstr "Перу"
 
-#: countries.py:702
+#: countries.py:703
 msgid "French Polynesia"
 msgstr "Французская Полинезия"
 
-#: countries.py:706
+#: countries.py:707
 msgid "Papua New Guinea"
 msgstr "Папуа - Новая Гвинея"
 
-#: countries.py:710
+#: countries.py:711
 msgid "Philippines"
 msgstr "Филиппины"
 
-#: countries.py:714
+#: countries.py:715
 msgid "Pakistan"
 msgstr "Пакистан"
 
-#: countries.py:718
+#: countries.py:719
 msgid "Poland"
 msgstr "Польша"
 
-#: countries.py:722
+#: countries.py:723
 msgid "Saint Pierre and Miquelon"
 msgstr "Сен-Пьер и Микелон"
 
-#: countries.py:726
+#: countries.py:727
 msgid "Pitcairn"
 msgstr "Питкэрн"
 
-#: countries.py:730
+#: countries.py:731
 msgid "Puerto Rico"
 msgstr "Пуэрто-Рико"
 
-#: countries.py:734
+#: countries.py:735
 msgid "Palestinian Territory"
 msgstr "Палестинская территория"
 
-#: countries.py:738
+#: countries.py:739
 msgid "Portugal"
 msgstr "Португалия"
 
-#: countries.py:742
+#: countries.py:743
 msgid "Palau"
 msgstr "Палау"
 
-#: countries.py:746
+#: countries.py:747
 msgid "Paraguay"
 msgstr "Парагвай"
 
-#: countries.py:750
+#: countries.py:751
 msgid "Qatar"
 msgstr "Катар"
 
-#: countries.py:754
+#: countries.py:755
 msgid "Réunion"
 msgstr "Встреча"
 
-#: countries.py:758
+#: countries.py:759
 msgid "Romania"
 msgstr "Румыния"
 
-#: countries.py:762
+#: countries.py:763
 msgid "Serbia"
 msgstr "Сербия"
 
-#: countries.py:766
+#: countries.py:767
 msgid "Russia"
 msgstr "Россия"
 
-#: countries.py:770
+#: countries.py:771
 msgid "Rwanda"
 msgstr "Руанда"
 
-#: countries.py:774
+#: countries.py:775
 msgid "Saudi Arabia"
 msgstr "Саудовская Аравия"
 
-#: countries.py:778
+#: countries.py:779
 msgid "Solomon Islands"
 msgstr "Соломоновы острова"
 
-#: countries.py:782
+#: countries.py:783
 msgid "Seychelles"
 msgstr "Сейшелы"
 
-#: countries.py:786
+#: countries.py:787
 msgid "Sudan"
 msgstr "Судан"
 
-#: countries.py:790
+#: countries.py:791
 msgid "Sweden"
 msgstr "Швеция"
 
-#: countries.py:794
+#: countries.py:795
 msgid "Singapore"
 msgstr "Сингапур"
 
-#: countries.py:798
+#: countries.py:799
 msgid "Saint Helena, Ascension and Tristan Da Cunha"
 msgstr "Святая Елена, Вознесение и Тристан-да-Кунья"
 
-#: countries.py:802
+#: countries.py:803
 msgid "Slovenia"
 msgstr "Словения"
 
-#: countries.py:806
+#: countries.py:807
 msgid "Svalbard and Jan Mayen"
 msgstr "Шпицберген и Ян-Майен"
 
-#: countries.py:810
+#: countries.py:811
 msgid "Slovakia"
 msgstr "Словакия"
 
-#: countries.py:814
+#: countries.py:815
 msgid "Sierra Leone"
 msgstr "Сьерра-Леоне"
 
-#: countries.py:818
+#: countries.py:819
 msgid "San Marino"
 msgstr "Сан-Марино"
 
-#: countries.py:822
+#: countries.py:823
 msgid "Senegal"
 msgstr "Сенегал"
 
-#: countries.py:826
+#: countries.py:827
 msgid "Somalia"
 msgstr "Сомали"
 
-#: countries.py:830
+#: countries.py:831
 msgid "Suriname"
 msgstr "Суринам"
 
-#: countries.py:834
+#: countries.py:835
 msgid "South Sudan"
 msgstr "южный Судан"
 
-#: countries.py:838
+#: countries.py:839
 msgid "Sao Tome and Principe"
 msgstr "Сан-Томе и Принсипи"
 
-#: countries.py:842
+#: countries.py:843
 msgid "El Salvador"
 msgstr "Эль Сальвадор"
 
-#: countries.py:846
+#: countries.py:847
 msgid "Sint Maarten (Dutch Part)"
 msgstr "Синт-Мартен (голландская часть)"
 
-#: countries.py:850
+#: countries.py:851
 msgid "Syrian Arab Republic"
 msgstr "Сирийская Арабская Республика"
 
-#: countries.py:854
+#: countries.py:855
 msgid "Swaziland"
 msgstr "Свазиленд"
 
-#: countries.py:858
+#: countries.py:859
 msgid "Turks and Caicos Islands"
 msgstr "острова Теркс и Кайкос"
 
-#: countries.py:862
+#: countries.py:863
 msgid "Chad"
 msgstr "Чад"
 
-#: countries.py:866
+#: countries.py:867
 msgid "French Southern Territories"
 msgstr "Южные Французские Территории"
 
-#: countries.py:870
+#: countries.py:871
 msgid "Togo"
 msgstr "Того"
 
-#: countries.py:874
+#: countries.py:875
 msgid "Thailand"
 msgstr "Таиланд"
 
-#: countries.py:878
+#: countries.py:879
 msgid "Tajikistan"
 msgstr "Таджикистан"
 
-#: countries.py:882
+#: countries.py:883
 msgid "Tokelau"
 msgstr "Токелау"
 
-#: countries.py:886
+#: countries.py:887
 msgid "Timor-Leste"
 msgstr "Тимор читать"
 
-#: countries.py:890
+#: countries.py:891
 msgid "Turkmenistan"
 msgstr "Туркменистан"
 
-#: countries.py:894
+#: countries.py:895
 msgid "Tunisia"
 msgstr "Тунис"
 
-#: countries.py:898
+#: countries.py:899
 msgid "Tonga"
 msgstr "Прибыли"
 
-#: countries.py:902
+#: countries.py:903
 msgid "Turkey"
 msgstr "Турция"
 
-#: countries.py:906
+#: countries.py:907
 msgid "Trinidad and Tobago"
 msgstr "Тринидад и Тобаго"
 
-#: countries.py:910
+#: countries.py:911
 msgid "Tuvalu"
 msgstr "Тувалу"
 
-#: countries.py:914
+#: countries.py:915
 msgid "Taiwan"
 msgstr "Тайвань"
 
-#: countries.py:918
+#: countries.py:919
 msgid "Tanzania"
 msgstr "Танзания"
 
-#: countries.py:922
+#: countries.py:923
 msgid "Ukraine"
 msgstr "Украина"
 
-#: countries.py:926
+#: countries.py:927
 msgid "Uganda"
 msgstr "Уганда"
 
-#: countries.py:930
+#: countries.py:931
 msgid "United States Minor Outlying Islands"
 msgstr "Малые отдаленные острова США"
 
-#: countries.py:934
+#: countries.py:935
 msgid "United States"
 msgstr "Соединенные Штаты"
 
-#: countries.py:938
+#: countries.py:939
 msgid "Uruguay"
 msgstr "Уругвай"
 
-#: countries.py:942
+#: countries.py:943
 msgid "Uzbekistan"
 msgstr "Узбекистан"
 
-#: countries.py:946
+#: countries.py:947
 msgid "Vatican City"
 msgstr "Ватикан"
 
-#: countries.py:950
+#: countries.py:951
 msgid "Saint Vincent and The Grenadines"
 msgstr "Святой Винсент и Гренадины"
 
-#: countries.py:954
+#: countries.py:955
 msgid "Venezuela"
 msgstr "Венесуэла"
 
-#: countries.py:958
+#: countries.py:959
 msgid "Virgin Islands, British"
 msgstr "Виргинские острова, Британские"
 
-#: countries.py:962
+#: countries.py:963
 msgid "Virgin Islands, U.S."
 msgstr "Виргинские острова, США"
 
-#: countries.py:966
+#: countries.py:967
 msgid "Viet Nam"
 msgstr "Вьетнам"
 
-#: countries.py:970
+#: countries.py:971
 msgid "Vanuatu"
 msgstr "Вануату"
 
-#: countries.py:974
+#: countries.py:975
 msgid "Wallis and Futuna"
 msgstr "Уоллис и Футуна"
 
-#: countries.py:978
+#: countries.py:979
 msgid "Samoa"
 msgstr "Самоа"
 
-#: countries.py:982
+#: countries.py:983
 msgid "Republic of Kosovo"
 msgstr "Республика Косово"
 
-#: countries.py:986
+#: countries.py:987
 msgid "Yemen"
 msgstr "Йемен"
 
-#: countries.py:990
+#: countries.py:991
 msgid "Mayotte"
 msgstr "Майотта"
 
-#: countries.py:994
+#: countries.py:995
 msgid "South Africa"
 msgstr "Южная Африка"
 
-#: countries.py:998
+#: countries.py:999
 msgid "Zambia"
 msgstr "Замбия"
 
-#: countries.py:1002
+#: countries.py:1003
 msgid "Zimbabwe"
 msgstr "Зимбабве"
 
-#: tg_bot.py:17 tg_bot.py:100
+#: tg_bot.py:23 tg_bot.py:128
 msgid "🏠 Погода в моем регионе"
 msgstr ""
 
-#: tg_bot.py:18 tg_bot.py:101
+#: tg_bot.py:24 tg_bot.py:129
 msgid "🌐 Выбор языка"
 msgstr ""
 
-#: tg_bot.py:19 tg_bot.py:102
+#: tg_bot.py:25 tg_bot.py:130
 msgid "📐 Единицы"
 msgstr ""
 
-#: tg_bot.py:24
+#: tg_bot.py:27
 msgid "Привет! Напиши мне название города, и я пришлю сводку погоды!"
 msgstr ""
 
-#: tg_bot.py:29 tg_bot.py:81 tg_bot.py:115 tg_bot.py:156
+#: tg_bot.py:36 tg_bot.py:101 tg_bot.py:147 tg_bot.py:188
 msgid "📆 Прогноз на 24 ч"
 msgstr ""
 
-#: tg_bot.py:30 tg_bot.py:82 tg_bot.py:116 tg_bot.py:134
+#: tg_bot.py:37 tg_bot.py:102 tg_bot.py:148 tg_bot.py:166
 msgid "🗓 Прогноз на 5 дней"
 msgstr ""
 
-#: tg_bot.py:53
+#: tg_bot.py:64
 msgid "Выберите язык:"
 msgstr ""
 
-#: tg_bot.py:58
+#: tg_bot.py:73
 msgid "K, м/с, гПа"
 msgstr ""
 
-#: tg_bot.py:59
+#: tg_bot.py:74
 msgid "°C, м/с, мм рт ст"
 msgstr ""
 
-#: tg_bot.py:60
+#: tg_bot.py:75
 msgid "°F, миль/ч, гПа"
 msgstr ""
 
-#: tg_bot.py:63
+#: tg_bot.py:78
 msgid "Выберите единицы измерения:"
 msgstr ""
 
-#: tg_bot.py:92
+#: tg_bot.py:116
 msgid "Вы изменили единицы измерения!"
 msgstr ""
 
-#: tg_bot.py:105
+#: tg_bot.py:133
 msgid "Вы изменили язык на {0}!"
 msgstr ""
 
-#: tg_bot.py:133 tg_bot.py:155
+#: tg_bot.py:165 tg_bot.py:187
 msgid "⏳ Погода сейчас"
 msgstr ""
 
-#: tg_bot.py:146
+#: tg_bot.py:178
 msgid "ближайшие 24 часа"
 msgstr ""
 
-#: tg_bot.py:168
+#: tg_bot.py:200
 msgid "ближайшие 5 дней"
 msgstr ""
 
@@ -1216,7 +1216,7 @@ msgid "ССЗ ↖️"
 msgstr ""
 
 #: weather_requests.py:63
-msgid "🌫 Плохая видимость 🌫"
+msgid "🌫 Мгла 🌫"
 msgstr ""
 
 #: weather_requests.py:115
@@ -1231,67 +1231,67 @@ msgid ""
 "       (через "
 msgstr ""
 
-#: weather_requests.py:126
+#: weather_requests.py:122
 msgid "<b>🗺 Погода в "
 msgstr ""
 
-#: weather_requests.py:128
+#: weather_requests.py:124
 msgid "🕰 Местное время: "
 msgstr ""
 
-#: weather_requests.py:129
+#: weather_requests.py:125
 msgid "🎯 Координаты: <code>"
 msgstr ""
 
-#: weather_requests.py:130
+#: weather_requests.py:126
 msgid "🌡 Температура "
 msgstr ""
 
-#: weather_requests.py:131 weather_requests.py:199
+#: weather_requests.py:127 weather_requests.py:191
 msgid "🤔 Ощущается как "
 msgstr ""
 
-#: weather_requests.py:132 weather_requests.py:200
+#: weather_requests.py:128 weather_requests.py:192
 msgid "💧 Влажность "
 msgstr ""
 
-#: weather_requests.py:133 weather_requests.py:201
+#: weather_requests.py:129 weather_requests.py:193
 msgid "✈️️ Давление "
 msgstr ""
 
-#: weather_requests.py:134 weather_requests.py:202
+#: weather_requests.py:130 weather_requests.py:194
 msgid "💨 Ветер "
 msgstr ""
 
-#: weather_requests.py:135
+#: weather_requests.py:131
 msgid "🌅 Рассвет "
 msgstr ""
 
-#: weather_requests.py:136
+#: weather_requests.py:132
 msgid "🌆 Закат "
 msgstr ""
 
-#: weather_requests.py:137
+#: weather_requests.py:133
 msgid "🕓 Продолжительность дня "
 msgstr ""
 
-#: weather_requests.py:139
+#: weather_requests.py:135
 msgid "        🧚‍♀️     Хорошего дня!     🧚‍♂️"
 msgstr ""
 
-#: weather_requests.py:142 weather_requests.py:208
-msgid "Проверьте название города!"
+#: weather_requests.py:138 weather_requests.py:200
+msgid "⚠️ Проверьте название города!"
 msgstr ""
 
-#: weather_requests.py:164
+#: weather_requests.py:160
 msgid "<b>Прогноз погоды в "
 msgstr ""
 
-#: weather_requests.py:165
+#: weather_requests.py:161
 msgid "<b>на "
 msgstr ""
 
-#: weather_requests.py:198
+#: weather_requests.py:190
 msgid ""
 "<i>:</i>\n"
 "🌡 Температура "
@@ -1314,5 +1314,11 @@ msgstr ""
 #~ msgid ""
 #~ "\n"
 #~ "       (через )"
+#~ msgstr ""
+
+#~ msgid "🌫 Плохая видимость 🌫"
+#~ msgstr ""
+
+#~ msgid "Проверьте название города!"
 #~ msgstr ""
 
