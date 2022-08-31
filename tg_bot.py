@@ -18,6 +18,7 @@ async def start_command(message: types.Message):
     Функция, вызываемая командой /start
     Отправляет приветственное сообщение, включает клавиатуру с кнопками и сохраняет язык пользователя
     """
+    
     user_lang = message.from_user.language_code if message.from_user.language_code in ('ru', 'en') else 'en' # По команде /start устанавливается язык пользователя - русский или английский
     await db.add_user(user_id=message.from_user.id, user_lang=user_lang, user_units='metric') # Язык добавляется в базу данных под id пользователя
     location_button = KeyboardButton(_('🏠 Погода в моем регионе'), request_location=True)
@@ -32,6 +33,7 @@ async def home_weather(message: types.Message):
     """
     Эта фунция вызывается всякий раз, когда в бота приходит сообщение, содержащее геолокацию
     """
+    
     weather_24h_button = InlineKeyboardButton(text=_('📆 Прогноз на 24 ч'), callback_data='forecast_24h')
     weather_5d_button = InlineKeyboardButton(text=_('🗓 Прогноз на 5 дней'), callback_data='forecast_5d')
     weather_current_kb = InlineKeyboardMarkup(row_width=1).add(weather_24h_button, weather_5d_button) # Создаются кнопки для inline-клавиатуры
@@ -55,6 +57,7 @@ async def choose_lang(message: types.Message):
     """
     Функция для изменения языка пользователя
     """
+    
     lang_ru_button = InlineKeyboardButton(text='🇷🇺 RU', callback_data='changelang_ru')
     lang_en_button = InlineKeyboardButton(text='🇬🇧 EN', callback_data='changelang_en')
     changelang_kb = InlineKeyboardMarkup()
@@ -67,6 +70,7 @@ async def choose_units(message: types.Message):
     """
     Функция для изменения единиц измерения
     """
+    
     units_std_button = InlineKeyboardButton(text=_('K, м/с, гПа'), callback_data='changeunits_standart')
     units_metric_button = InlineKeyboardButton(text=_('°C, м/с, мм рт ст'), callback_data='changeunits_metric')
     units_imper_button = InlineKeyboardButton(text=_('°F, миль/ч, гПа'), callback_data='changeunits_imperial')
@@ -81,6 +85,7 @@ async def get_weather(message: types.Message):
     Когда боту приходит любое сообщение, содержащее текст, вызывается эта функция
     Бот делает запрос с использованием текста сообщения в качестве города
     """
+    
     user_data = await db.get_user_data(message.from_user.id)
     user_lang = user_data[1]
     user_units = user_data[2] # Достаем язык и единицы измерения пользователя
@@ -106,6 +111,7 @@ async def changeunits(callback: types.CallbackQuery):
     """
     Изменяем единицы измерения пользователя
     """
+    
     new_units = callback.data.split('_')[1]
     await db.edit_units(user_id=callback.from_user.id, user_units=new_units) # Вносим изменения в базу данных
     await callback.message.reply_to_message.reply(_('Вы изменили единицы измерения!'))
@@ -117,6 +123,7 @@ async def changelang(callback: types.CallbackQuery):
     """
     Изменяем язык пользователя
     """
+    
     new_lang = callback.data.split('_')[1]
     await db.edit_language(user_id=callback.from_user.id, user_lang=new_lang) # Вносим изменения в базу данных
     location_button = KeyboardButton(_('🏠 Погода в моем регионе', locale=new_lang), request_location=True)
@@ -134,6 +141,7 @@ async def forecast(callback: types.CallbackQuery):
     """
     Функция для запроса прогноза погоды
     """
+    
     forecast_str = callback.data.split('_')[1]
 
     if forecast_str == 'current': # Если пользователь запросил текущую погоду
