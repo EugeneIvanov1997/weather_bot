@@ -1,6 +1,7 @@
 from setup_all import _
 
 
+# Файл нужен для перевода названий стран
 countries_dict = {
     "AD": [
         _("Andorra"),
