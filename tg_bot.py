@@ -8,30 +8,37 @@ from weather_requests import make_weather_request, make_forecast_request
 import database_sql as db
 
 
-countries_dict = {}
-langs_dict = {'ru': 'русский', 'en': 'English'}
+
+langs_dict = {'ru': 'русский', 'en': 'English'} # Этот словарь нужен для вывода сообщения о смене языка
 
 
 @dp.message_handler(commands='start')
 async def start_command(message: types.Message):
-    user_lang = message.from_user.language_code if message.from_user.language_code in ('ru', 'en') else 'en'
-    await db.add_user(user_id=message.from_user.id, user_lang=user_lang, user_units='metric')
+    """
+    Функция, вызываемая командой /start
+    Отправляет приветственное сообщение, включает клавиатуру с кнопками и сохраняет язык пользователя
+    """
+    user_lang = message.from_user.language_code if message.from_user.language_code in ('ru', 'en') else 'en' # По команде /start устанавливается язык пользователя - русский или английский
+    await db.add_user(user_id=message.from_user.id, user_lang=user_lang, user_units='metric') # Язык добавляется в базу данных под id пользователя
     location_button = KeyboardButton(_('🏠 Погода в моем регионе'), request_location=True)
     languages_button = KeyboardButton(_('🌐 Выбор языка'))
-    units_button = KeyboardButton(_('📐 Единицы'))
+    units_button = KeyboardButton(_('📐 Единицы')) # Создаются кнопки главной клавиатуры
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2).row(location_button).add(languages_button, units_button)
-    await message.reply(_('Привет! Напиши мне название города, и я пришлю сводку погоды!'), reply_markup=keyboard)
+    await message.reply(_('Привет! Напиши мне название города, и я пришлю сводку погоды!'), reply_markup=keyboard) # Приветственное сообщение и установка клавиатуры
 
 
 @dp.message_handler(content_types=ContentTypes.LOCATION)
 async def home_weather(message: types.Message):
+    """
+    Эта фунция вызывается всякий раз, когда в бота приходит сообщение, содержащее геолокацию
+    """
     weather_24h_button = InlineKeyboardButton(text=_('📆 Прогноз на 24 ч'), callback_data='forecast_24h')
     weather_5d_button = InlineKeyboardButton(text=_('🗓 Прогноз на 5 дней'), callback_data='forecast_5d')
-    weather_current_kb = InlineKeyboardMarkup(row_width=1).add(weather_24h_button, weather_5d_button)
+    weather_current_kb = InlineKeyboardMarkup(row_width=1).add(weather_24h_button, weather_5d_button) # Создаются кнопки для inline-клавиатуры
 
-    user_data = await db.get_user_data(message.from_user.id)
+    user_data = await db.get_user_data(message.from_user.id) 
     user_lang = user_data[1]
-    user_units = user_data[2]
+    user_units = user_data[2] # Получаем язык и установленные единицы измерения пользователя по id
     await message.reply(make_weather_request(
         url=f'https://api.openweathermap.org/data/2.5/weather' \
             f'?lat={message.location.latitude}' \
@@ -40,11 +47,14 @@ async def home_weather(message: types.Message):
             f'&units={user_units}' \
             f'&lang={user_lang}',
         units=user_units),
-        reply_markup=weather_current_kb)
+        reply_markup=weather_current_kb) # В ответном сообщении отправляем обработанный результат запроса по координатам из геолокации и так же создаем inline-клавиатуру
 
 
 @dp.message_handler(Text(startswith='🌐'))
 async def choose_lang(message: types.Message):
+    """
+    Функция для изменения языка пользователя
+    """
     lang_ru_button = InlineKeyboardButton(text='🇷🇺 RU', callback_data='changelang_ru')
     lang_en_button = InlineKeyboardButton(text='🇬🇧 EN', callback_data='changelang_en')
     changelang_kb = InlineKeyboardMarkup()
